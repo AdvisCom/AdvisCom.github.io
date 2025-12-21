@@ -1,391 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>BelajarCode</title>
-</head>
-<!--Pure HTML CSS JS, and Library-->
-<body>
+  </head>
+  <!--Pure HTML CSS JS, and Library-->
+  <body>
     <!--header-->
     <header>
-        <!--Navbar-->
-        <nav id="navbar">
-            <div class="logo">
-                <h1 class="textlogo">AdvisCom</h1>
-            </div>
-            <input type="checkbox" id="checkbox">
-            <ul class="navigation">
-                <li><a class="nav-link" href="#">Ho<span>me</span></a></li>
-                <li><a class="nav-link" href="#sixpcs">Six<span>pcs</span></a></li>
-                <li><a class="nav-link" href="#about">Ab<span>out</span></a></li>
-                <li><a class="nav-link" href="#skill">Ski<span>lls</span></a></li>
-                <li><a class="nav-link" href="#project">Pro<span>ject</span></a></li>
-                <li><a class="nav-link" href="#contact">Con<span>tact</span></a></li>
+      <!--Navbar-->
+      <nav id="navbar">
+        <div class="logo">
+          <h1 class="textlogo">AdvisCom</h1>
+        </div>
+        <input type="checkbox" id="checkbox" />
+        <ul class="navigation">
+          <li>
+            <a class="nav-link" href="#">Ho<span>me</span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#sixpcs">Six<span>pcs</span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#about">Ab<span>out</span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#skill">Ski<span>lls</span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#project">Pro<span>ject</span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Con<span>tact</span></a>
+          </li>
 
-                <li><a href="">Subscribe</a></li>
-            </ul>
-            <div class="menu">
-                <label for="checkbox"></label>
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-        </nav>
-        <!--Navbar End-->
+          <li><a href="">Subscribe</a></li>
+        </ul>
+        <div class="menu">
+          <label for="checkbox"></label>
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </nav>
+      <!--Navbar End-->
     </header>
     <!--header end-->
 
     <main>
-        <!--home-->
-    <section id="home">
-            <!--homeleft-->
-        <article class="homeleft" data-aos="fade-right" data-aos-duration="1500">
-            <h3>Hello Word👋</h3>
-            <h1>I am <span class="roadtext"></span></h1>
-            <p>My Introduction Is Advis, I am a Beginner Web Developer.
-                Help me to continue to develop, and can give many benefits to others people, let's build a good future together🤝.</p>
-            <button class="home-btn">
-                <a href="#sixpcs">Next</a>
-            </button>
-            <button id="home-message-btn" onclick="openMessage()">
-                Message
-            </button>
-            <div id="message">
-                <h4>Message <span style="color: #23a6d5;">for</span> <span style="color: #e73c7e;">you..</span></h4>
-                <p>Dont Rush, Work Smart And Stay Confident !!!</p>
-                <button onclick="closeMessage()">Certainly</button>
-            </div>
+      <!--home-->
+      <section id="home">
+        <!--homeleft-->
+        <article
+          class="homeleft"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <h3>Hello Word👋</h3>
+          <h1>I am <span class="roadtext"></span></h1>
+          <p>
+            My Introduction Is Advis, I am a Beginner Web Developer. Help me to
+            continue to develop, and can give many benefits to others people,
+            let's build a good future together🤝.
+          </p>
+          <button class="home-btn">
+            <a href="#sixpcs">Next</a>
+          </button>
+          <button id="home-message-btn" onclick="openMessage()">Message</button>
+          <div id="message">
+            <h4>
+              Message <span style="color: #23a6d5">for</span>
+              <span style="color: #e73c7e">you..</span>
+            </h4>
+            <p>Dont Rush, Work Smart And Stay Confident !!!</p>
+            <button onclick="closeMessage()">Certainly</button>
+          </div>
         </article>
-            <!--homeright-->
-        <article class="homeright" data-aos="fade-down" data-aos-duration="1500">
-            <img src="mypurplecodeicon.png" alt="" class="code-icon-img">
+        <!--homeright-->
+        <article
+          class="homeright"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          <img src="mypurplecodeicon.png" alt="" class="code-icon-img" />
         </article>
-     </section>
-        <!--home End-->
+      </section>
+      <!--home End-->
 
-        <!--sixpcs-->
-        <section id="sixpcs">
-            <article class="sixpcs-contain">
-                <div class="heading-sixpcs" data-aos="fade-down" data-aos-duration="1000">
-                    <h1><span style="color: #e73c7e;">Habits</span> Of <span style="color: rgb(155, 0, 46);">The Great</span> In <span style="color: #23a6d5;">Six Pics</span></h1>
-                </div>
-                <div class="boxcontainer">
-                    <!--Box 1-->
-                    <div class="boxitem" data-aos="fade-down" data-aos-duration="1100">
-                    <figure class="item">
-                        <img src="aboutimage/likeplan.jpg" alt="">
-                        <figcaption id="caption1">Start Making plans and looking for solusitions so that things continue to run well</figcaption>
-                    </figure>
-                    <p>Make a Plans and Solusitions</p>
-                        <button id="read1">
-                            ReadMore
-                        </button>
-                    </div>
-                    <!--Box 2-->
-                    <div class="boxitem" data-aos="fade-down" data-aos-duration="1200">
-                    <figure class="item">
-                        <img src="aboutimage/reading.jpg" alt="">
-                        <figcaption id="caption2">Read often to improve your literacy so that you become a person who thinks theoretically</figcaption>
-                    </figure>
-                    <p>Read often to Improve literacy</p>
-                        <button id="read2">
-                            ReadMore
-                        </button>
-                    </div>
-                    <!--Box 3-->
-                    <div class="boxitem" data-aos="fade-down" data-aos-duration="1300">
-                    <figure class="item">
-                        <img src="aboutimage/learning.jpg" alt="">
-                        <figcaption id="caption3">Be an active person, ask if you don't understand, so that your insight will broaden without limits</figcaption>
-                    </figure>
-                    <p>Be an Active Person in any case</p>
-                        <button id="read3">
-                            ReadMore
-                        </button>
-                    </div>
-                    <!--Box 4-->
-                    <div class="boxitem" data-aos="fade-down" data-aos-duration="1400">
-                    <figure class="item">
-                        <img src="aboutimage/Lonely-Man-Rex.avif" alt="">
-                        <figcaption id="caption4">Don't be afraid to be alone, because in the end, humans are busy taking care of their own lives</figcaption>
-                    </figure>
-                    <p>Don't be afraid to be Alone</p>
-                        <button id="read4">
-                            ReadMore
-                        </button>
-                    </div>
-                    <!--Box 5-->
-                    <div class="boxitem" data-aos="fade-down" data-aos-duration="1500">
-                    <figure class="item">
-                        <img src="aboutimage/invest.jpg" alt="">
-                        <figcaption id="caption5">start investing in positive things to balance worldly and ukhrawi provisions</figcaption>
-                    </figure>
-                    <p>Always Invest in positive things</p>
-                        <button id="read5">
-                            ReadMore
-                        </button>
-                    </div>
-                    <!--Box 6-->
-                    <div class="boxitem" data-aos="fade-down" data-aos-duration="1600">
-                    <figure class="item">
-                        <img src="aboutimage/NGV.webp" alt="">
-                        <figcaption id="caption6">Never give up whatever the conditions, because with difficulties there will definitely be ease</figcaption>
-                    </figure>
-                    <p>Keep strong and Never give up</p>
-                        <button id="read6">
-                            ReadMore
-                        </button>
-                    </div>
-                </div>
-             </article>
-        </section>
-        <!--sixpcs End-->
-
-        <!--about-->
-        <section id="about">
-            <!--Card Profile-->
-                <div class="about-boxcard" data-aos="zoom-in-up" data-aos-duration="1500">
-                    <div class="about-card">
-                        <div class="front">
-                            <div class="front-bar">
-                                <i class="fa-solid fa-chart-bar"></i>
-                                <h1>Advis</h1>
-                                <i class="fa-solid fa-gear"></i>
-                            </div>
-                            <div class="front-show">
-                                <img src="dev.io.png" alt="">
-                                <p>Give you motivation and education</p>
-                                <div class="front-socialmedia">
-                                    <i class="fa-brands fa-instagram"></i>
-                                    <i class="fa-brands fa-square-facebook"></i>
-                                    <i class="fa-brands fa-tiktok"></i>
-                                    <i class="fa-brands fa-github"></i>
-                                </div>
-                                <button>Follow</button>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="back-show">
-                                <h1>❗❗Attention❗❗</h1>
-                                <li>-Let's follow my social media accounts🚀</li>
-                                <li>-Don't forget to subscribe my channel🆓</li>
-                                <li>-Thank you for flipping this card😊</li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <!--Explain article-->
-                <article class="about-explain">
-                    <h2 data-aos="fade-down" data-aos-duration="1500"><span style="display: block; margin-bottom: 50px;">About Me</span>Let's Reading</h2>
-                    <p data-aos="fade-up" data-aos-duration="1500">Hello World, let me introduce, i'am Advis, my real name is Addis, my status is a student. I want to become a web developer, I'm starting to studying from now until I can achieve that dream. Nothing is impossible if you try, and if you feel like you have failed in achieving your dream,<br>don't worry, another dream can be created.<br>Thank you for reading, if you have suggestions for our website, please leave a review in the contact section.</p>
-                    <button id="flip-btn" data-aos="zoom-out-down" data-aos-duration="1600">FlipProfile</button>
-                </article>
-        </section>
-        <!--about End-->
-
-        <!--skill-->
-        <section id="skill">
-            <article class="skill-contain">
-                <div class="headingskills" data-aos="fade-down" data-aos-duration="1000">
-                    <h1>My <span style="color: deeppink;">Skills</span></h1>
-                </div>
-                <!--myskill box-->
-                <div class="boxskills">
-                    <!--from fontawesome with local-->
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1100">
-                        <i class="fa-brands fa-html5" style="color: #ff0000;"></i>
-                        <p>HTML</p>
-                    </div>
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1100">
-                        <i class="fa-brands fa-css3-alt" style="color: #0062ff;"></i>
-                        <p>CSS-CSS3</p>
-                    </div>
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1200">
-                        <i class="fa-brands fa-js" style="color: #f7bf05;"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1200">
-                        <i class="fa-brands fa-bootstrap" style="color: #9900ff;"></i>
-                        <p>BootStrap</p>
-                    </div>
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1300">
-                        <i class="fa-brands fa-react" style="color: #1ad8db;"></i>
-                        <p>ReactJS</p>
-                    </div>
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1300">
-                        <i class="fa-brands fa-node" style="color: #5eb855;"></i>
-                        <p>NodeJS</p>
-                    </div>
-                    
-                    <!--from boxicons with link-->
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1400">
-                        <i class="bx bxl-jquery" style="color: #0769ad;"></i>
-                        <p>jQuery</p>
-                    </div>
-                    <div class="boxskill-item" data-aos="fade-down" data-aos-duration="1400">
-                        <i class="bx bxl-tailwind-css" style="color:#00ceff"></i>
-                        <p>TailwindCss</p>
-                    </div>
-                </div>
-
-                <!--overview-->
-                <div class="OverView">
-                    <input type="checkbox" id="ovw-spawn">
-                    <button class="ovw-btn" data-aos="fade-down-right" data-aos-duration="1500"><label for="ovw-spawn"></label></button>
-                    <div class="ovw-fill">
-                        <ol class="ovw1"><h2>Html<br><span class="persen">100%</span></h2></ol>
-                        <ol class="ovw2"><h2>Css<br><span class="persen">95%</span></h2></ol>
-                        <ol class="ovw3"><h2>JavaScript<br><span class="persen">65%</span></h2></ol>
-                        <ol class="ovw4"><h2>BootStrap<br><span class="persen">80%</span></h2></ol>
-                        <ol class="ovw5"><h2>ReactJS<br><span class="persen">40%</span></h2></ol>
-                        <ol class="ovw6"><h2>NodeJS<br><span class="persen">38%</span></h2></ol>
-                        <ol class="ovw7"><h2>jQuery<br><span class="persen">52%</span></h2></ol>
-                        <ol class="ovw8"><h2>TailwindCss<br><span class="persen">73%</span></h2></ol>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!--skill End-->
-
-        <!--project-->
-        <section id="project">
-            <article class="pro-contain">
-                <div class="headingpro" data-aos="fade-down" data-aos-duration="1000">
-                    <h1><span style="color: azure;">My</span> <span style="color: #23a6d5;">Project</span> Soon</h1>
-                </div>
-                <!--my plan project box-->
-                <div class="boxproject">
-                    <!--quiziz-->
-                    <img src="project-image/quizproject.webp" alt="quiz" data-aos="zoom-in" data-aos-duration="1100">
-                    <p data-aos="zoom-in" data-aos-duration="1200"><span style="font-weight: 400; color: #23a6d5;">The JavaScript Quiz</span> is a collection of question or puzzle, both general and religious, with javascript code, The number of questions is limited and for each correct answer, the user will <span style="font-weight: 400; color: mediumslateblue;">get a credit score.</span></p>
-                    <!--calculator-->
-                    <img src="project-image/calculatorjs.png" alt="calculator" data-aos="zoom-in" data-aos-duration="1300">
-                    <p data-aos="zoom-in" data-aos-duration="1400"><span style="font-weight: 400; color: #23a6d5;">The JavaScript Calculator</span> itself performs mathematical operations like Addition, Subtraction, Division, Multiplication, etc. html creates basic structure, css and javaScript are used to design <span style="font-weight: 400; color: mediumslateblue;">the calculator.</span></p>
-                    <!--calendar-->
-                    <img src="project-image/calendarjs.png" alt="calendar" data-aos="zoom-in" data-aos-duration="1500">
-                    <p data-aos="zoom-in" data-aos-duration="1600"><span style="font-weight: 400; color: #23a6d5;">The JavaScript Calendar</span> is used to display the date and days of the week or month. It provides month, year, and decade view options to navigate quickly to a desired date. functions for <span style="font-weight: 400; color: mediumslateblue;">our daily lives.</span></p>
-                </div>
-                <!--think of secret project-->
-                <div class="promistery">
-                    <img src="project-image/mistery1.png" alt="mistery1">
-                    <img src="project-image/mistery2.jpg" alt="mistery2">
-                </div>
-            </article>
-        </section>
-        <!--project End-->
-
-        <!--contact-->
-        <section id="contact">
-            <article class="contact-contain">
-                <div class="headingcontact" data-aos="fade-down" data-aos-duration="1000">
-                    <h1>Contact <span style="color: #23a6d5;">Center</span></h1>
-                </div>
-                <!--section contact-->
-                <div class="box-contact">
-                    <div class="info-contact">
-                        <!--Phone-->
-                        <p data-aos="fade-down" data-aos-duration="1100"><i class="fa-solid fa-phone-volume"></i><span> +62 866 6666 6666</span></p>
-                        <!--Email-->
-                        <p data-aos="fade-down" data-aos-duration="1200"><i class="fa-regular fa-envelope"></i><span> vgunx567@gmail.com</span></p>
-                        <!--Location-->
-                        <p data-aos="fade-down" data-aos-duration="1300"><i class="fa-solid fa-map-location-dot"></i><span> SouthBorneo, Indonesia</span></p>
-                        <!--Develop-->
-                        <p data-aos="fade-down" data-aos-duration="1400"><i class="fa-brands fa-dev"></i><span> Title: CodeAdvisCom.Dev</span></p>
-
-                        <!--Attention paragraph-->
-                        <p class="p1" data-aos="fade-up" data-aos-duration="1500"><span style="font-weight: 600;">Attention!!</span><br>Hi, Please give me suggestions or messages in this contact form, so that I know a shortcomings on my website, thank you for visiting my website.</p>
-                    </div>
-                    <!--form contact-->
-                    <form>
-                        <i class="fa-solid fa-paper-plane"></i>
-                  
-                        <div class="input-group">
-                          <label>Full Name</label>
-                          <input type="text" placeholder="Enter Your Name" id="contact-name" onkeyup="validateName()">
-                          <span id="name-error"></span>
-                        </div>
-                  
-                        <div class="input-group">
-                          <label>Phone No</label>
-                          <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
-                          <span id="phone-error"></span>
-                        </div>
-                  
-                        <div class="input-group">
-                          <label>Email Id</label>
-                          <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
-                          <span id="email-error"></span>
-                        </div>   
-                  
-                        <div class="input-group">
-                          <label>Your Message</label>
-                          <textarea rows="5" placeholder="Enter Your Message" id="contact-message" onkeyup="validateMessage()">
-                  
-                          </textarea>
-                          <span id="message-error"></span>
-                        </div>
-                  
-                      <button onclick="return validateForm()">Submit</button>
-                      <span id="submit-error"></span>
-                     
-                    </form>
-                </div>
-            </article>
-        </section>
-        <!--contact End-->
-
-        <!--footer-->
-        <footer>
-            <!--top -> quotes wm, link, others..-->
-            <div class="footer-top">
-                <!--left the quote-->
-                <div class="footer-left-top" data-aos="fade-down-right" data-aos-duration="1000">
-                    <h1>Advis<span style="color: #23a6d5;">Com</span></h1>
-                    <p><span style="color: #23a6d5; font-weight: 400;">Think of your brain as a computer</span> update the software, protect the battery, clean the hard drive, so that your brain remains stable and protected from viruses, let's <span style="color: mediumslateblue; font-weight: 400;">take care of your brain now</span></p>
-                </div>
-                <!--right the ul section-->
-                <div class="footer-right-top">
-                <!--ul product-->
-                    <ul class="ft-right-ul-product">
-                        <h3 data-aos="zoom-in" data-aos-duration="1100">MyPro<span style="color: #23a6d5;">ducts</span></h3>
-                        <li data-aos="fade-right" data-aos-duration="1200"><a href="#">-Simple Games</a></li>
-                        <li data-aos="fade-right" data-aos-duration="1300"><a href="#">-ToDoList Apps</a></li>
-                        <li data-aos="fade-right" data-aos-duration="1400"><a href="#">-Quiz Hikmah Apps</a></li>
-                        <li data-aos="fade-right" data-aos-duration="1500"><a href="#">-Canva Edit</a></li>
-                        <li data-aos="fade-right" data-aos-duration="1600"><a href="#">-HTML Template</a></li>
-                    </ul>
-                <!--ul link in sections page this website-->    
-                    <ul class="ft-right-ul-uselink">
-                        <h3 data-aos="zoom-in" data-aos-duration="1100">UseFul<span style="color: #23a6d5;">Link</span></h3>
-                        <li data-aos="fade-right" data-aos-duration="1700"><a href="#sixpcs">-Six Pics Six Key</a></li>
-                        <li data-aos="fade-right" data-aos-duration="1800"><a href="#about">-About Me</a></li>
-                        <li data-aos="fade-right" data-aos-duration="1900"><a href="#skill">-My Skills</a></li>
-                        <li data-aos="fade-right" data-aos-duration="2000"><a href="#project">-Soon Project</a></li>
-                        <li data-aos="fade-right" data-aos-duration="2100"><a href="#contact">-Services</a></li>
-                    </ul>
-                <!--ul anything address-->    
-                    <ul class="ft-right-ul-address">
-                        <h3 data-aos="zoom-in" data-aos-duration="1100">Add<span style="color: #23a6d5;">ress</span></h3>
-                        <li data-aos="fade-right" data-aos-duration="2200"><a href="#">-555, Borneo, Indonesia</a></li>
-                        <li data-aos="fade-right" data-aos-duration="2300"><a href="#">-AdvisCom.github.io</a></li>
-                        <li data-aos="fade-right" data-aos-duration="2400"><a href="#">-$CodeAdvis$</a></li>
-                        <li data-aos="fade-right" data-aos-duration="2500"><a href="#">-AdvisCom.Dev.io</a></li>
-                    </ul>
-                </div>
+      <!--sixpcs-->
+      <section id="sixpcs">
+        <article class="sixpcs-contain">
+          <div
+            class="heading-sixpcs"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <h1>
+              <span style="color: #e73c7e">Habits</span> Of
+              <span style="color: rgb(155, 0, 46)">The Great</span> In
+              <span style="color: #23a6d5">Six Pics</span>
+            </h1>
+          </div>
+          <div class="boxcontainer">
+            <!--Box 1-->
+            <div class="boxitem" data-aos="fade-down" data-aos-duration="1100">
+              <figure class="item">
+                <img src="aboutimage/likeplan.jpg" alt="" />
+                <figcaption id="caption1">
+                  Start Making plans and looking for solusitions so that things
+                  continue to run well
+                </figcaption>
+              </figure>
+              <p>Make a Plans and Solusitions</p>
+              <button id="read1">ReadMore</button>
             </div>
-            <!--bottom copyright / watermark-->
-            <div class="footer-bottom">
-                <p>All Right Reserved By &copy;adviscom</p>
+            <!--Box 2-->
+            <div class="boxitem" data-aos="fade-down" data-aos-duration="1200">
+              <figure class="item">
+                <img src="aboutimage/reading.jpg" alt="" />
+                <figcaption id="caption2">
+                  Read often to improve your literacy so that you become a
+                  person who thinks theoretically
+                </figcaption>
+              </figure>
+              <p>Read often to Improve literacy</p>
+              <button id="read2">ReadMore</button>
             </div>
-        </footer>
-        <!--footer end-->
+            <!--Box 3-->
+            <div class="boxitem" data-aos="fade-down" data-aos-duration="1300">
+              <figure class="item">
+                <img src="aboutimage/learning.jpg" alt="" />
+                <figcaption id="caption3">
+                  Be an active person, ask if you don't understand, so that your
+                  insight will broaden without limits
+                </figcaption>
+              </figure>
+              <p>Be an Active Person in any case</p>
+              <button id="read3">ReadMore</button>
+            </div>
+            <!--Box 4-->
+            <div class="boxitem" data-aos="fade-down" data-aos-duration="1400">
+              <figure class="item">
+                <img src="aboutimage/Lonely-Man-Rex.avif" alt="" />
+                <figcaption id="caption4">
+                  Don't be afraid to be alone, because in the end, humans are
+                  busy taking care of their own lives
+                </figcaption>
+              </figure>
+              <p>Don't be afraid to be Alone</p>
+              <button id="read4">ReadMore</button>
+            </div>
+            <!--Box 5-->
+            <div class="boxitem" data-aos="fade-down" data-aos-duration="1500">
+              <figure class="item">
+                <img src="aboutimage/invest.jpg" alt="" />
+                <figcaption id="caption5">
+                  start investing in positive things to balance worldly and
+                  ukhrawi provisions
+                </figcaption>
+              </figure>
+              <p>Always Invest in positive things</p>
+              <button id="read5">ReadMore</button>
+            </div>
+            <!--Box 6-->
+            <div class="boxitem" data-aos="fade-down" data-aos-duration="1600">
+              <figure class="item">
+                <img src="aboutimage/NGV.webp" alt="" />
+                <figcaption id="caption6">
+                  Never give up whatever the conditions, because with
+                  difficulties there will definitely be ease
+                </figcaption>
+              </figure>
+              <p>Keep strong and Never give up</p>
+              <button id="read6">ReadMore</button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--sixpcs End-->
+
+      <!--about-->
+      <section id="about">
+        <!--Card Profile-->
+        <div
+          class="about-boxcard"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <div class="about-card">
+            <div class="front">
+              <div class="front-bar">
+                <i class="fa-solid fa-chart-bar"></i>
+                <h1>Advis</h1>
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <div class="front-show">
+                <img src="dev.io.png" alt="" />
+                <p>Give you motivation and education</p>
+                <div class="front-socialmedia">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-tiktok"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <button>Follow</button>
+              </div>
+            </div>
+            <div class="back">
+              <div class="back-show">
+                <h1>❗❗Attention❗❗</h1>
+                <li>-Let's follow my social media accounts🚀</li>
+                <li>-Don't forget to subscribe my channel🆓</li>
+                <li>-Thank you for flipping this card😊</li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Explain article-->
+        <article class="about-explain">
+          <h2 data-aos="fade-down" data-aos-duration="1500">
+            <span style="display: block; margin-bottom: 50px">About Me</span
+            >Let's Reading
+          </h2>
+          <p data-aos="fade-up" data-aos-duration="1500">
+            Hello World, let me introduce, i'am Advis, my real name is Addis, my
+            status is a student. I want to become a web developer, I'm starting
+            to studying from now until I can achieve that dream. Nothing is
+            impossible if you try, and if you feel like you have failed in
+            achieving your dream,<br />don't worry, another dream can be
+            created.<br />Thank you for reading, if you have suggestions for our
+            website, please leave a review in the contact section.
+          </p>
+          <button
+            id="flip-btn"
+            data-aos="zoom-out-down"
+            data-aos-duration="1600"
+          >
+            FlipProfile
+          </button>
+        </article>
+      </section>
+      <!--about End-->
+
+      <!--skill-->
+      <section id="skill">
+        <article class="skill-contain">
+          <div
+            class="headingskills"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <h1>My <span style="color: deeppink">Skills</span></h1>
+          </div>
+          <!--myskill box-->
+          <div class="boxskills">
+            <!--from fontawesome with local-->
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1100"
+            >
+              <i class="fa-brands fa-html5" style="color: #ff0000"></i>
+              <p>HTML</p>
+            </div>
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1100"
+            >
+              <i class="fa-brands fa-css3-alt" style="color: #0062ff"></i>
+              <p>CSS-CSS3</p>
+            </div>
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1200"
+            >
+              <i class="fa-brands fa-js" style="color: #f7bf05"></i>
+              <p>JavaScript</p>
+            </div>
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1200"
+            >
+              <i class="fa-brands fa-bootstrap" style="color: #9900ff"></i>
+              <p>BootStrap</p>
+            </div>
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1300"
+            >
+              <i class="fa-brands fa-react" style="color: #1ad8db"></i>
+              <p>ReactJS</p>
+            </div>
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1300"
+            >
+              <i class="fa-brands fa-node" style="color: #5eb855"></i>
+              <p>NodeJS</p>
+            </div>
+
+            <!--from boxicons with link-->
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <i class="bx bxl-jquery" style="color: #0769ad"></i>
+              <p>jQuery</p>
+            </div>
+            <div
+              class="boxskill-item"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
+              <i class="bx bxl-tailwind-css" style="color: #00ceff"></i>
+              <p>TailwindCss</p>
+            </div>
+          </div>
+
+          <!--overview-->
+          <div class="OverView">
+            <input type="checkbox" id="ovw-spawn" />
+            <button
+              class="ovw-btn"
+              data-aos="fade-down-right"
+              data-aos-duration="1500"
+            >
+              <label for="ovw-spawn"></label>
+            </button>
+            <div class="ovw-fill">
+              <ol class="ovw1">
+                <h2>Html<br /><span class="persen">100%</span></h2>
+              </ol>
+              <ol class="ovw2">
+                <h2>Css<br /><span class="persen">95%</span></h2>
+              </ol>
+              <ol class="ovw3">
+                <h2>JavaScript<br /><span class="persen">65%</span></h2>
+              </ol>
+              <ol class="ovw4">
+                <h2>BootStrap<br /><span class="persen">80%</span></h2>
+              </ol>
+              <ol class="ovw5">
+                <h2>ReactJS<br /><span class="persen">40%</span></h2>
+              </ol>
+              <ol class="ovw6">
+                <h2>NodeJS<br /><span class="persen">38%</span></h2>
+              </ol>
+              <ol class="ovw7">
+                <h2>jQuery<br /><span class="persen">52%</span></h2>
+              </ol>
+              <ol class="ovw8">
+                <h2>TailwindCss<br /><span class="persen">73%</span></h2>
+              </ol>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--skill End-->
+
+      <!--project-->
+      <section id="project">
+        <article class="pro-contain">
+          <div class="headingpro" data-aos="fade-down" data-aos-duration="1000">
+            <h1>
+              <span style="color: azure">My</span>
+              <span style="color: #23a6d5">Project</span> Soon
+            </h1>
+          </div>
+          <!--my plan project box-->
+          <div class="boxproject">
+            <!--quiziz-->
+            <img
+              src="project-image/quizproject.webp"
+              alt="quiz"
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+            />
+            <p data-aos="zoom-in" data-aos-duration="1200">
+              <span style="font-weight: 400; color: #23a6d5"
+                >The JavaScript Quiz</span
+              >
+              is a collection of question or puzzle, both general and religious,
+              with javascript code, The number of questions is limited and for
+              each correct answer, the user will
+              <span style="font-weight: 400; color: mediumslateblue"
+                >get a credit score.</span
+              >
+            </p>
+            <!--calculator-->
+            <img
+              src="project-image/calculatorjs.png"
+              alt="calculator"
+              data-aos="zoom-in"
+              data-aos-duration="1300"
+            />
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              <span style="font-weight: 400; color: #23a6d5"
+                >The JavaScript Calculator</span
+              >
+              itself performs mathematical operations like Addition,
+              Subtraction, Division, Multiplication, etc. html creates basic
+              structure, css and javaScript are used to design
+              <span style="font-weight: 400; color: mediumslateblue"
+                >the calculator.</span
+              >
+            </p>
+            <!--calendar-->
+            <img
+              src="project-image/calendarjs.png"
+              alt="calendar"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            />
+            <p data-aos="zoom-in" data-aos-duration="1600">
+              <span style="font-weight: 400; color: #23a6d5"
+                >The JavaScript Calendar</span
+              >
+              is used to display the date and days of the week or month. It
+              provides month, year, and decade view options to navigate quickly
+              to a desired date. functions for
+              <span style="font-weight: 400; color: mediumslateblue"
+                >our daily lives.</span
+              >
+            </p>
+          </div>
+          <!--think of secret project-->
+          <div class="promistery">
+            <img src="project-image/mistery1.png" alt="mistery1" />
+            <img src="project-image/mistery2.jpg" alt="mistery2" />
+          </div>
+        </article>
+      </section>
+      <!--project End-->
+
+      <!--contact-->
+      <section id="contact">
+        <article class="contact-contain">
+          <div
+            class="headingcontact"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <h1>Contact <span style="color: #23a6d5">Center</span></h1>
+          </div>
+          <!--section contact-->
+          <div class="box-contact">
+            <div class="info-contact">
+              <!--Phone-->
+              <p data-aos="fade-down" data-aos-duration="1100">
+                <i class="fa-solid fa-phone-volume"></i
+                ><span> +62 866 6666 6666</span>
+              </p>
+              <!--Email-->
+              <p data-aos="fade-down" data-aos-duration="1200">
+                <i class="fa-regular fa-envelope"></i
+                ><span> vgunx567@gmail.com</span>
+              </p>
+              <!--Location-->
+              <p data-aos="fade-down" data-aos-duration="1300">
+                <i class="fa-solid fa-map-location-dot"></i
+                ><span> SouthBorneo, Indonesia</span>
+              </p>
+              <!--Develop-->
+              <p data-aos="fade-down" data-aos-duration="1400">
+                <i class="fa-brands fa-dev"></i
+                ><span> Title: CodeAdvisCom.Dev</span>
+              </p>
+
+              <!--Attention paragraph-->
+              <p class="p1" data-aos="fade-up" data-aos-duration="1500">
+                <span style="font-weight: 600">Attention!!</span><br />Hi,
+                Please give me suggestions or messages in this contact form, so
+                that I know a shortcomings on my website, thank you for visiting
+                my website.
+              </p>
+            </div>
+            <!--form contact-->
+            <form>
+              <i class="fa-solid fa-paper-plane"></i>
+
+              <div class="input-group">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  id="contact-name"
+                  onkeyup="validateName()"
+                />
+                <span id="name-error"></span>
+              </div>
+
+              <div class="input-group">
+                <label>Phone No</label>
+                <input
+                  type="tel"
+                  placeholder="123 456 7890"
+                  id="contact-phone"
+                  onkeyup="validatePhone()"
+                />
+                <span id="phone-error"></span>
+              </div>
+
+              <div class="input-group">
+                <label>Email Id</label>
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  id="contact-email"
+                  onkeyup="validateEmail()"
+                />
+                <span id="email-error"></span>
+              </div>
+
+              <div class="input-group">
+                <label>Your Message</label>
+                <textarea
+                  rows="5"
+                  placeholder="Enter Your Message"
+                  id="contact-message"
+                  onkeyup="validateMessage()"
+                >
+                </textarea>
+                <span id="message-error"></span>
+              </div>
+
+              <button onclick="return validateForm()">Submit</button>
+              <span id="submit-error"></span>
+            </form>
+          </div>
+        </article>
+      </section>
+      <!--contact End-->
+
+      <!--footer-->
+      <footer>
+        <!--top -> quotes wm, link, others..-->
+        <div class="footer-top">
+          <!--left the quote-->
+          <div
+            class="footer-left-top"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            <h1>Advis<span style="color: #23a6d5">Com</span></h1>
+            <p>
+              <span style="color: #23a6d5; font-weight: 400"
+                >Think of your brain as a computer</span
+              >
+              update the software, protect the battery, clean the hard drive, so
+              that your brain remains stable and protected from viruses, let's
+              <span style="color: mediumslateblue; font-weight: 400"
+                >take care of your brain now</span
+              >
+            </p>
+          </div>
+          <!--right the ul section-->
+          <div class="footer-right-top">
+            <!--ul product-->
+            <ul class="ft-right-ul-product">
+              <h3 data-aos="zoom-in" data-aos-duration="1100">
+                MyPro<span style="color: #23a6d5">ducts</span>
+              </h3>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <a href="#">-Simple Games</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1300">
+                <a href="#">-ToDoList Apps</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1400">
+                <a href="#">-Quiz Hikmah Apps</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1500">
+                <a href="#">-Canva Edit</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1600">
+                <a href="#">-HTML Template</a>
+              </li>
+            </ul>
+            <!--ul link in sections page this website-->
+            <ul class="ft-right-ul-uselink">
+              <h3 data-aos="zoom-in" data-aos-duration="1100">
+                UseFul<span style="color: #23a6d5">Link</span>
+              </h3>
+              <li data-aos="fade-right" data-aos-duration="1700">
+                <a href="#sixpcs">-Six Pics Six Key</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1800">
+                <a href="#about">-About Me</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1900">
+                <a href="#skill">-My Skills</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="2000">
+                <a href="#project">-Soon Project</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="2100">
+                <a href="#contact">-Services</a>
+              </li>
+            </ul>
+            <!--ul anything address-->
+            <ul class="ft-right-ul-address">
+              <h3 data-aos="zoom-in" data-aos-duration="1100">
+                Add<span style="color: #23a6d5">ress</span>
+              </h3>
+              <li data-aos="fade-right" data-aos-duration="2200">
+                <a href="#">-555, Borneo, Indonesia</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="2300">
+                <a href="#">-AdvisCom.github.io</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="2400">
+                <a href="#">-$CodeAdvis$</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="2500">
+                <a href="#">-AdvisCom.Dev.io</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--bottom copyright / watermark-->
+        <div class="footer-bottom">
+          <p>All Right Reserved By &copy;adviscom</p>
+        </div>
+      </footer>
+      <!--footer end-->
     </main>
 
     <!--script-->
@@ -393,7 +649,7 @@
     <script src="dommain.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
-      </script>
-</body>
+      AOS.init();
+    </script>
+  </body>
 </html>
