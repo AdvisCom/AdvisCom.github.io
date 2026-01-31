@@ -17,7 +17,7 @@ window.addEventListener("scroll", () => {
 
 //--typed text homeleft
 var Typed = new Typed(".roadtext", {
-    strings:["Advis", "Web Developer", "Developer Engineer"],
+    strings:["Advis", "Web Developer", "Software Engineer"],
     typeSpeed: 70,
     backSpeed: 60,
     loop: true
