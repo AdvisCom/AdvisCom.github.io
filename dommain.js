@@ -34,19 +34,19 @@ function closeMessage() {
 
 // --Sixpcs--
 //full deklarasi button readmore 1-6 click multifungsi
-var read1 = document.getElementById('read1');
-var read2 = document.getElementById('read2');
-var read3 = document.getElementById('read3');
-var read4 = document.getElementById('read4');
-var read5 = document.getElementById('read5');
-var read6 = document.getElementById('read6');
+const read1 = document.getElementById('read1');
+const read2 = document.getElementById('read2');
+const read3 = document.getElementById('read3');
+const read4 = document.getElementById('read4');
+const read5 = document.getElementById('read5');
+const read6 = document.getElementById('read6');
 //figcaption nya
-var caption1 = document.getElementById('caption1');
-var caption2 = document.getElementById('caption2');
-var caption3 = document.getElementById('caption3');
-var caption4 = document.getElementById('caption4');
-var caption5 = document.getElementById('caption5');
-var caption6 = document.getElementById('caption6');
+const caption1 = document.getElementById('caption1');
+const caption2 = document.getElementById('caption2');
+const caption3 = document.getElementById('caption3');
+const caption4 = document.getElementById('caption4');
+const caption5 = document.getElementById('caption5');
+const caption6 = document.getElementById('caption6');
 //readmore 1
 read1.addEventListener('click', () => {
     caption1.style.bottom = '0';
@@ -136,14 +136,14 @@ flipBtn.addEventListener("click", flipCard);
 // --About Card End..
 
 // --Contact Form--
-var nameError = document.getElementById("name-error");
-var phoneError = document.getElementById("phone-error");
-var emailError = document.getElementById("email-error");
-var messageError = document.getElementById("message-error");
-var submitError = document.getElementById("submit-error");
+const nameError = document.getElementById("name-error");
+const phoneError = document.getElementById("phone-error");
+const emailError = document.getElementById("email-error");
+const messageError = document.getElementById("message-error");
+const submitError = document.getElementById("submit-error");
 
 function validateName() {
-    var name  = document.getElementById("contact-name").value;
+    const name  = document.getElementById("contact-name").value;
 
     if(name.length == 0) {
         nameError.innerHTML = 'Name is required';
@@ -158,7 +158,7 @@ function validateName() {
 }
 
 function validatePhone() {
-    var phone  = document.getElementById("contact-phone").value;
+    const phone  = document.getElementById("contact-phone").value;
 
     if(phone.length == 0) {
         phoneError.innerHTML = 'Phone no is required';
@@ -178,7 +178,7 @@ function validatePhone() {
 }
 
 function validateEmail() {
-    var email  = document.getElementById("contact-email").value;
+    const email  = document.getElementById("contact-email").value;
 
     if(email.length == 0) {
         emailError.innerHTML = 'Email is required';
@@ -194,9 +194,9 @@ function validateEmail() {
 }
 
 function validateMessage() {
-    var message  = document.getElementById("contact-message").value;
-    var required = 30;
-    var left = required - message.length;
+    const message  = document.getElementById("contact-message").value;
+    const required = 30;
+    const left = required - message.length;
 
     if(left > 0) {
         messageError.innerHTML = left + ' more characters required';
