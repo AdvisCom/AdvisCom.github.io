@@ -7,12 +7,12 @@ window.addEventListener("scroll", () => {
     const windowPosition = window.scrollY > 0;
     navBar.classList.toggle("scrolling-active", windowPosition);
     
-    ul[0].classList.toggle("scrolling-active", windowPosition);
-    ul[1].classList.toggle("scrolling-active", windowPosition);
-    ul[2].classList.toggle("scrolling-active", windowPosition);
-    ul[3].classList.toggle("scrolling-active", windowPosition);
-    ul[4].classList.toggle("scrolling-active", windowPosition);
-    ul[5].classList.toggle("scrolling-active", windowPosition);
+    ul[0].classList.toggle("scrolling-active", windowPosition)
+    ul[1].classList.toggle("scrolling-active", windowPosition)
+    ul[2].classList.toggle("scrolling-active", windowPosition)
+    ul[3].classList.toggle("scrolling-active", windowPosition)
+    ul[4].classList.toggle("scrolling-active", windowPosition)
+    ul[5].classList.toggle("scrolling-active", windowPosition)
 });
 
 //--typed text homeleft
@@ -33,71 +33,26 @@ function closeMessage() {
 }
 
 // --Sixpcs--
-//full deklarasi button readmore 1-6 click multifungsi
-const read1 = document.getElementById('read1');
-const read2 = document.getElementById('read2');
-const read3 = document.getElementById('read3');
-const read4 = document.getElementById('read4');
-const read5 = document.getElementById('read5');
-const read6 = document.getElementById('read6');
-//figcaption nya
-const caption1 = document.getElementById('caption1');
-const caption2 = document.getElementById('caption2');
-const caption3 = document.getElementById('caption3');
-const caption4 = document.getElementById('caption4');
-const caption5 = document.getElementById('caption5');
-const caption6 = document.getElementById('caption6');
-//readmore 1
-read1.addEventListener('click', () => {
-    caption1.style.bottom = '0';
+function showCaption(button) {
+    // cari parent .boxitem hanya dalam lingkup button yg diklik
+    const boxItem = button.closest('.boxitem');
+    // cari figcaption hanya dalam lingkup .boxitem yg sedang diklik
+    const caption = boxItem.querySelector("figcaption");
+
+    caption.style.bottom = '0';
     setTimeout(() => {
-    caption1.style.bottom = '-9rem';
+        caption.style.bottom = '-9rem';
     }, 5000);
-});
-//readmore 2
-read2.addEventListener('click', () => {
-    caption2.style.bottom = '0';
-    setTimeout(() => {
-    caption2.style.bottom = '-9rem';
-    }, 5000);
-});
-//readmore 3
-read3.addEventListener('click', () => {
-    caption3.style.bottom = '0';
-    setTimeout(() => {
-    caption3.style.bottom = '-9rem';
-    }, 5000);
-});
-//readmore 4
-read4.addEventListener('click', () => {
-    caption4.style.bottom = '0';
-    setTimeout(() => {
-    caption4.style.bottom = '-9rem';
-    }, 5000);
-});
-//readmore 5
-read5.addEventListener('click', () => {
-    caption5.style.bottom = '0';
-    setTimeout(() => {
-    caption5.style.bottom = '-9rem';
-    }, 5000);
-});
-//readmore 6
-read6.addEventListener('click', () => {
-    caption6.style.bottom = '0';
-    setTimeout(() => {
-    caption6.style.bottom = '-9rem';
-    }, 5000);
-});
+}
 //ribet banget, pdhl isinya cuma deklar sama jsdom event click doang HAHHAHAHAHAHHA
 // --Sixpcs End..
 
 // --About Card--
 //deklar tombol flip dan kartu bagian depan dan belakang
-const flipBtn = document.getElementById("flip-btn")
-const card = document.querySelector(".about-card");
-const back = document.querySelector(".back");
-const backShow = document.querySelector(".back-show");
+const flipBtn = document.getElementById("flip-btn"),
+card = document.querySelector(".about-card"),
+back = document.querySelector(".back"),
+backShow = document.querySelector(".back-show");
 
 function flipCard() {
     // langsung animasi
@@ -136,11 +91,11 @@ flipBtn.addEventListener("click", flipCard);
 // --About Card End..
 
 // --Contact Form--
-const nameError = document.getElementById("name-error");
-const phoneError = document.getElementById("phone-error");
-const emailError = document.getElementById("email-error");
-const messageError = document.getElementById("message-error");
-const submitError = document.getElementById("submit-error");
+const nameError = document.getElementById("name-error"),
+phoneError = document.getElementById("phone-error"),
+emailError = document.getElementById("email-error"),
+messageError = document.getElementById("message-error"),
+submitError = document.getElementById("submit-error");
 
 function validateName() {
     const name  = document.getElementById("contact-name").value;
